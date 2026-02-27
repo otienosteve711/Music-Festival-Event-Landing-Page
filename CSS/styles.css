@@ -1,0 +1,80 @@
+
+header {
+    min-height: 100px;
+    background: linear-gradient(to right, blue, teal, lightblue);
+    color: white;
+    padding: 2rem;
+    display: flex;
+
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header h2 {
+    font-size: 5.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-size: 30px;
+    margin-bottom: 2rem;
+}
+
+
+header .btn {
+    font-size: 1.2rem;
+    padding: 0.75rem 2rem;
+}
+
+
+.card img {
+    object-fit: cover;
+    height: 250px;
+}
+
+
+.Schedule .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.Schedule .grid div {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+
+@media (min-width: 768px) {
+    .Schedule .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+.card.border-primary {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.card.border-primary:hover {
+    transform: scale(1.08);
+}
+
+
+form {
+    background: wheat;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+form .btn {
+    width: 100%;
+}
